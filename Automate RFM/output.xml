@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230203 14:04:01.651" rpa="false" schemaversion="3">
+<suite id="s1" name="Homepage" source="D:\PycharmProjects\RobotFW\Homepage.robot">
+<test id="s1-t1" name="Dafalulu Masuk/Daftar" line="15">
+<kw name="Open dafalulu">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_daflu}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230203 14:04:01.923" level="INFO">Opening browser 'chrome' to base url 'https://dafalulu.ruangguru.com/'.</msg>
+<status status="PASS" starttime="20230203 14:04:01.922" endtime="20230203 14:04:04.434"/>
+</kw>
+<status status="PASS" starttime="20230203 14:04:01.922" endtime="20230203 14:04:04.435"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230203 14:04:04.435" endtime="20230203 14:04:04.554"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230203 14:04:09.556" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230203 14:04:04.555" endtime="20230203 14:04:09.556"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="menu-button-2"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230203 14:04:09.557" level="INFO">Clicking element 'xpath=//*[@id="menu-button-2"]'.</msg>
+<status status="PASS" starttime="20230203 14:04:09.556" endtime="20230203 14:04:09.607"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Halo, selamat datang!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230203 14:04:09.622" level="INFO">Current page contains text 'Halo, selamat datang!'.</msg>
+<status status="PASS" starttime="20230203 14:04:09.607" endtime="20230203 14:04:09.622"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Ajak anak Anda belajar sambil bertualang bersama Dafa dan Lulu, yuk!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230203 14:04:09.638" level="INFO">Current page contains text 'Ajak anak Anda belajar sambil bertualang bersama Dafa dan Lulu, yuk!'.</msg>
+<status status="PASS" starttime="20230203 14:04:09.622" endtime="20230203 14:04:09.638"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Ingin tahu lebih lengkap tentang belajar dengan Dafa dan Lulu?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230203 14:04:09.657" level="INFO">Current page contains text 'Ingin tahu lebih lengkap tentang belajar dengan Dafa dan Lulu?'.</msg>
+<status status="PASS" starttime="20230203 14:04:09.639" endtime="20230203 14:04:09.657"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>Masuk</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20230203 14:04:09.896" level="INFO">Current page contains button 'Masuk'.</msg>
+<status status="PASS" starttime="20230203 14:04:09.658" endtime="20230203 14:04:09.896"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>Daftar</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20230203 14:04:10.100" level="INFO">Current page contains button 'Daftar'.</msg>
+<status status="PASS" starttime="20230203 14:04:09.896" endtime="20230203 14:04:10.101"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230203 14:04:15.102" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230203 14:04:10.102" endtime="20230203 14:04:15.102"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230203 14:04:15.102" endtime="20230203 14:04:17.284"/>
+</kw>
+<status status="PASS" starttime="20230203 14:04:01.921" endtime="20230203 14:04:17.285"/>
+</test>
+<test id="s1-t2" name="DemoQA input text" line="28">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_demoqa}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230203 14:04:17.287" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<status status="PASS" starttime="20230203 14:04:17.287" endtime="20230203 14:04:22.987"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230203 14:04:22.988" endtime="20230203 14:04:23.099"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=userName</arg>
+<arg>lopes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230203 14:04:23.100" level="INFO">Typing text 'lopes' into text field 'id=userName'.</msg>
+<status status="PASS" starttime="20230203 14:04:23.100" endtime="20230203 14:04:23.186"/>
+</kw>
+<status status="PASS" starttime="20230203 14:04:17.286" endtime="20230203 14:04:23.187"/>
+</test>
+<status status="PASS" starttime="20230203 14:04:01.653" endtime="20230203 14:04:23.187"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Homepage">Homepage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
