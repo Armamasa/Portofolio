@@ -6,7 +6,7 @@ ${url_login}     https://dafalulu.ruangguru.com/auth?redirect_url=https%3A%2F%2F
 
 *** Keywords ***
 Open login page
-    Open Browser   ${url_daflu}    chrome 
+    Open Browser   ${url_login}    chrome
 
 *** Test Cases ***
 Open login 
