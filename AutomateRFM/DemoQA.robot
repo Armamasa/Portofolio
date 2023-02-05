@@ -10,29 +10,26 @@ ${email_txt}      id:userEmail
 *** Keywords ***
 Open Homepage
     open browser    ${url_demoQA}   chrome
+Open Browser To Drag And Drop Page
+    Open Homepage
+    Maximize Browser Window
+    wait until page contains element    xpath=//*[@id="app"]/div/div/div[1]/a/img
+Drag And Drop Element To New Window
+    Click Element    xpath=//*[@id="app"]/div/div/div[1]/a/img
+    switch window    title=Tools QA - Selenium Training
+    title should be    Tools QA - Selenium Training
+    sleep    3s
+    switch window    title=DEMOQA
+    click element    xpath=//*[@id="app"]/div/div/div[2]/div/div[4]
+    page should contain element    xpath=//*[@id="app"]/header/a
+    Drag And Drop By Offset    xpath=//*[@id="app"]/header/a    50    50
+Verify Element Is In New Window
+    Page Should Contain Element    xpath=//*[@id="app"]/header/a
 
 *** Test Cases ***
-DemoQA homepage
-    Open Browser  https://demoqa.com/  chrome
-    Click Element  link=Interactions
-    Click Element  link=Sortable
-    Wait Until Element Is Visible  id=sortableBox1
-    Drag And Drop  id=sortableBox1  id=sortableBox3
-    Wait Until Element Is Visible  xpath=//li[text()='Item 1']
-    Element Text Should Be  xpath=//li[text()='Item 1']  Item 1
-
-    Click Element  link=Interactions
-    Click Element  link=Droppable
-    Wait Until Element Is Visible  id=draggable
-    Drag And Drop  id=draggable  id=droppable
-    Wait Until Element Is Visible  xpath=//p[text()='Dropped!']
-    Element Text Should Be  xpath=//p[text()='Dropped!']  Dropped!
-
-    Click Element  link=Widgets
-    Click Element  link=Accordion
-    Wait Until Element Is Visible  id=section1Heading
-    Click Element  id=section1Heading
-    Wait Until Element Is Visible  xpath=//h3[text()='Section 1']/following-sibling::div[@class='ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom']
-    Element Should Be Visible  xpath=//h3[text()='Section 1']/following-sibling::div[@class='ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom']
-
+Test Drag and Drop Element To New Window
+    Open Browser To Drag And Drop Page
+    Drag And Drop Element To New Window
+    Verify Element Is In New Window
     Close Browser
+
