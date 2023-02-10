@@ -1,8 +1,8 @@
 # Porto
 
-*Please take a look inside the Testing Document for information of my testing documentation.
-*Please look inside the AutomationRFM to see a bit of what I learned from RobotFramework 
-*API and SQL folder is only information or note about what API testing and SQL testing is. 
+- Please take a look inside the Testing Document for information of my testing documentation.
+- Please look inside the AutomationRFM to see a bit of what I learned from RobotFramework 
+- API and SQL folder is only information or note about what API testing and SQL testing is. 
 
 What I need to do as a QA Analyst?
 
