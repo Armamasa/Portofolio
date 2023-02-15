@@ -2,5 +2,4 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-Homepage
-    
+
