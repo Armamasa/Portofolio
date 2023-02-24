@@ -1,150 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230215 22:47:04.456" rpa="false" schemaversion="3">
-<suite id="s1" name="DemoQA" source="D:\PycharmProjects\RobotFW\Porto\AutomateRFM\DemoQA.robot">
-<test id="s1-t1" name="Test Drag and Drop Element To New Window" line="36">
-<kw name="Open Browser To Drag And Drop Page">
-<kw name="Open Homepage">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230217 17:06:10.572" rpa="false" schemaversion="3">
+<suite id="s1" name="DemoQA Form" source="D:\PycharmProjects\RobotFW\Porto\AutomateRFM\DemoQA Form.robot">
+<test id="s1-t1" name="SoftwareSeni automate test" line="8">
+<kw name="Access the “Softwareseni” site">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url_demoQA}</arg>
+<arg>${url_softwareseni}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230215 22:47:04.747" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
-<status status="PASS" starttime="20230215 22:47:04.747" endtime="20230215 22:47:11.674"/>
-</kw>
-<status status="PASS" starttime="20230215 22:47:04.747" endtime="20230215 22:47:11.674"/>
+<msg timestamp="20230217 17:06:10.851" level="INFO">Opening browser 'chrome' to base url 'https://www.softwareseni.co.id/'.</msg>
+<status status="PASS" starttime="20230217 17:06:10.851" endtime="20230217 17:06:15.152"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230215 22:47:11.675" endtime="20230215 22:47:11.808"/>
+<status status="PASS" starttime="20230217 17:06:15.152" endtime="20230217 17:06:15.267"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="app"]/div/div/div[1]/a/img</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230215 22:47:11.808" endtime="20230215 22:47:11.822"/>
+<status status="PASS" starttime="20230217 17:06:10.851" endtime="20230217 17:06:15.267"/>
 </kw>
-<status status="PASS" starttime="20230215 22:47:04.746" endtime="20230215 22:47:11.822"/>
+<kw name="Search for “Angkasa Pura - SSO” content on the page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/section[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:15.283" level="INFO">Current page contains element 'xpath=/html/body/section[2]'.</msg>
+<status status="PASS" starttime="20230217 17:06:15.267" endtime="20230217 17:06:15.283"/>
 </kw>
-<kw name="Drag And Drop Element To New Window">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="app"]/div/div/div[1]/a/img</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230215 22:47:11.824" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/div[1]/a/img'.</msg>
-<status status="PASS" starttime="20230215 22:47:11.823" endtime="20230215 22:47:11.974"/>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Angkasa Pura - SSO</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230217 17:06:15.283" level="INFO">Current page contains text 'Angkasa Pura - SSO'.</msg>
+<status status="PASS" starttime="20230217 17:06:15.283" endtime="20230217 17:06:15.283"/>
 </kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>title=Tools QA - Selenium Training</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230215 22:47:11.974" endtime="20230215 22:47:14.224"/>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="w-slider-mask-0"]/div[1]/div/div/div/div/div[1]/div[2]/a/div/img</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230217 17:06:15.299" level="INFO">Current page contains image 'xpath=//*[@id="w-slider-mask-0"]/div[1]/div/div/div/div/div[1]/div[2]/a/div/img'.</msg>
+<status status="PASS" starttime="20230217 17:06:15.283" endtime="20230217 17:06:15.299"/>
 </kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="w-slider-mask-0"]/div[1]/div/div/div/div/div[1]/div[2]/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230217 17:06:15.299" level="INFO">Clicking image 'xpath=//*[@id="w-slider-mask-0"]/div[1]/div/div/div/div/div[1]/div[2]/a/div/img'.</msg>
+<status status="PASS" starttime="20230217 17:06:15.299" endtime="20230217 17:06:16.186"/>
+</kw>
+<status status="PASS" starttime="20230217 17:06:15.267" endtime="20230217 17:06:16.187"/>
+</kw>
+<kw name="Access the Angkasa Pura - SSO page">
 <kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Tools QA - Selenium Training</arg>
+<arg>Angkasa Pura - SSO - SoftwareSeni Portfolio</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230215 22:47:14.227" level="INFO">Page title is 'Tools QA - Selenium Training'.</msg>
-<status status="PASS" starttime="20230215 22:47:14.224" endtime="20230215 22:47:14.227"/>
+<msg timestamp="20230217 17:06:16.192" level="INFO">Page title is 'Angkasa Pura - SSO - SoftwareSeni Portfolio'.</msg>
+<status status="PASS" starttime="20230217 17:06:16.187" endtime="20230217 17:06:16.192"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Angkasa Pura - SSO</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230217 17:06:16.200" level="INFO">Current page contains text 'Angkasa Pura - SSO'.</msg>
+<status status="PASS" starttime="20230217 17:06:16.192" endtime="20230217 17:06:16.201"/>
+</kw>
+<status status="PASS" starttime="20230217 17:06:16.187" endtime="20230217 17:06:16.201"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230217 17:06:18.202" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:16.201" endtime="20230217 17:06:18.202"/>
+</kw>
+<kw name="Scroll down until the footer is visible and go back to the main page by clicking the “Softwareseni” logo">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollBy(0, 700)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230217 17:06:18.204" level="INFO">Executing JavaScript:
+window.scrollBy(0, 700)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230217 17:06:18.203" endtime="20230217 17:06:18.209"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=/html/body/section[3]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230217 17:06:18.209" endtime="20230217 17:06:18.508"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/section[3]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:18.514" level="INFO">Current page contains element 'xpath=/html/body/section[3]'.</msg>
+<status status="PASS" starttime="20230217 17:06:18.508" endtime="20230217 17:06:18.514"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>xpath=/html/body/section[3]/div/div[1]/a/img</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230217 17:06:18.533" level="INFO">Current page contains image 'xpath=/html/body/section[3]/div/div[1]/a/img'.</msg>
+<status status="PASS" starttime="20230217 17:06:18.514" endtime="20230217 17:06:18.533"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230217 17:06:28.533" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:18.533" endtime="20230217 17:06:28.533"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=/html/body/section[3]/div/div[1]/a/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230217 17:06:28.534" level="INFO">Clicking image 'xpath=/html/body/section[3]/div/div[1]/a/img'.</msg>
+<status status="PASS" starttime="20230217 17:06:28.533" endtime="20230217 17:06:29.426"/>
+</kw>
+<status status="PASS" starttime="20230217 17:06:18.203" endtime="20230217 17:06:29.426"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230217 17:06:31.426" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:29.426" endtime="20230217 17:06:31.426"/>
+</kw>
+<kw name="Open the search menu in the header and search for “Tim Kami”">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/main</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:31.440" level="INFO">Current page contains element 'xpath=/html/body/main'.</msg>
+<status status="PASS" starttime="20230217 17:06:31.427" endtime="20230217 17:06:31.440"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/main/div[2]/div/div[1]/h1</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:31.449" level="INFO">Current page contains element 'xpath=/html/body/main/div[2]/div/div[1]/h1'.</msg>
+<status status="PASS" starttime="20230217 17:06:31.440" endtime="20230217 17:06:31.450"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Tingkatkan Omzet &amp;</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230217 17:06:31.462" level="INFO">Current page contains text 'Tingkatkan Omzet &amp;'.</msg>
+<status status="PASS" starttime="20230217 17:06:31.450" endtime="20230217 17:06:31.463"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Efektivitas Bisnis</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230217 17:06:31.474" level="INFO">Current page contains text 'Efektivitas Bisnis'.</msg>
+<status status="PASS" starttime="20230217 17:06:31.463" endtime="20230217 17:06:31.475"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div[2]/div[2]/div[4]/img</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230217 17:06:31.488" level="INFO">Current page contains image 'xpath=/html/body/nav/div[2]/div[2]/div[4]/img'.</msg>
+<status status="PASS" starttime="20230217 17:06:31.475" endtime="20230217 17:06:31.488"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div[2]/div[2]/div[4]/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230217 17:06:31.488" level="INFO">Clicking image 'xpath=/html/body/nav/div[2]/div[2]/div[4]/img'.</msg>
+<status status="PASS" starttime="20230217 17:06:31.488" endtime="20230217 17:06:31.525"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230215 22:47:17.227" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230215 22:47:14.227" endtime="20230215 22:47:17.227"/>
+<msg timestamp="20230217 17:06:34.526" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:31.525" endtime="20230217 17:06:34.526"/>
 </kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>title=DEMOQA</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230215 22:47:17.227" endtime="20230215 22:47:17.265"/>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div[2]/div[4]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:34.540" level="INFO">Current page contains element 'xpath=/html/body/nav/div[2]/div[4]'.</msg>
+<status status="PASS" starttime="20230217 17:06:34.526" endtime="20230217 17:06:34.540"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div[2]/div[4]/form</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:34.550" level="INFO">Current page contains element 'xpath=/html/body/nav/div[2]/div[4]/form'.</msg>
+<status status="PASS" starttime="20230217 17:06:34.540" endtime="20230217 17:06:34.550"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230217 17:06:34.576" level="INFO">Current page contains element 'xpath=//*[@id="search"]'.</msg>
+<status status="PASS" starttime="20230217 17:06:34.550" endtime="20230217 17:06:34.576"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=search</arg>
+<arg>Tim Kami</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230217 17:06:34.576" level="INFO">Typing text 'Tim Kami' into text field 'id=search'.</msg>
+<status status="PASS" starttime="20230217 17:06:34.576" endtime="20230217 17:06:34.657"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230217 17:06:36.658" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:34.657" endtime="20230217 17:06:36.658"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="app"]/div/div/div[2]/div/div[4]</arg>
+<arg>xpath=/html/body/nav/div[2]/div[4]/form/input[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230215 22:47:17.267" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/div[2]/div/div[4]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.265" endtime="20230215 22:47:17.367"/>
+<msg timestamp="20230217 17:06:36.659" level="INFO">Clicking element 'xpath=/html/body/nav/div[2]/div[4]/form/input[2]'.</msg>
+<status status="PASS" starttime="20230217 17:06:36.658" endtime="20230217 17:06:39.128"/>
 </kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="app"]/header/a</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.378" level="INFO">Current page contains element 'xpath=//*[@id="app"]/header/a'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.367" endtime="20230215 22:47:17.378"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230217 17:06:44.129" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:39.129" endtime="20230217 17:06:44.129"/>
 </kw>
-<kw name="Drag And Drop By Offset" library="SeleniumLibrary">
-<arg>xpath=//*[@id="app"]/header/a</arg>
-<arg>50</arg>
-<arg>50</arg>
-<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
-<status status="PASS" starttime="20230215 22:47:17.379" endtime="20230215 22:47:17.924"/>
+<status status="PASS" starttime="20230217 17:06:31.427" endtime="20230217 17:06:44.129"/>
 </kw>
-<status status="PASS" starttime="20230215 22:47:11.823" endtime="20230215 22:47:17.924"/>
-</kw>
-<kw name="Verify Element Is In New Window">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="app"]/header/a</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.932" level="INFO">Current page contains element 'xpath=//*[@id="app"]/header/a'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.925" endtime="20230215 22:47:17.932"/>
+<kw name="Access the page displayed on the search result page">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Search Results</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230217 17:06:44.136" level="INFO">Page title is 'Search Results'.</msg>
+<status status="PASS" starttime="20230217 17:06:44.131" endtime="20230217 17:06:44.136"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Accordian</arg>
+<arg>Hasil Pencarian</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230215 22:47:17.943" level="INFO">Current page contains text 'Accordian'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.932" endtime="20230215 22:47:17.943"/>
+<msg timestamp="20230217 17:06:44.150" level="INFO">Current page contains text 'Hasil Pencarian'.</msg>
+<status status="PASS" starttime="20230217 17:06:44.136" endtime="20230217 17:06:44.150"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-1"]</arg>
+<arg>xpath=/html/body/div/form</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.952" level="INFO">Current page contains element 'xpath=//*[@id="item-1"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.943" endtime="20230215 22:47:17.952"/>
+<msg timestamp="20230217 17:06:44.158" level="INFO">Current page contains element 'xpath=/html/body/div/form'.</msg>
+<status status="PASS" starttime="20230217 17:06:44.150" endtime="20230217 17:06:44.159"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>/thank-you</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230217 17:06:44.170" level="INFO">Current page contains link '/thank-you'.</msg>
+<status status="PASS" starttime="20230217 17:06:44.159" endtime="20230217 17:06:44.171"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-2"]</arg>
+<arg>xpath=/html/body/div/div/div/div[1]/p</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.961" level="INFO">Current page contains element 'xpath=//*[@id="item-2"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.952" endtime="20230215 22:47:17.961"/>
+<msg timestamp="20230217 17:06:44.179" level="INFO">Current page contains element 'xpath=/html/body/div/div/div/div[1]/p'.</msg>
+<status status="PASS" starttime="20230217 17:06:44.171" endtime="20230217 17:06:44.179"/>
 </kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-3"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.970" level="INFO">Current page contains element 'xpath=//*[@id="item-3"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.961" endtime="20230215 22:47:17.970"/>
+<status status="PASS" starttime="20230217 17:06:44.131" endtime="20230217 17:06:44.179"/>
 </kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-4"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.979" level="INFO">Current page contains element 'xpath=//*[@id="item-4"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.970" endtime="20230215 22:47:17.979"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-5"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.988" level="INFO">Current page contains element 'xpath=//*[@id="item-5"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.979" endtime="20230215 22:47:17.988"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-6"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:17.998" level="INFO">Current page contains element 'xpath=//*[@id="item-6"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.988" endtime="20230215 22:47:17.998"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-7"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:18.007" level="INFO">Current page contains element 'xpath=//*[@id="item-7"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:17.998" endtime="20230215 22:47:18.007"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="item-8"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230215 22:47:18.015" level="INFO">Current page contains element 'xpath=//*[@id="item-8"]'.</msg>
-<status status="PASS" starttime="20230215 22:47:18.007" endtime="20230215 22:47:18.015"/>
-</kw>
-<status status="PASS" starttime="20230215 22:47:17.925" endtime="20230215 22:47:18.016"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230217 17:06:49.180" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230217 17:06:44.180" endtime="20230217 17:06:49.180"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230215 22:47:18.016" endtime="20230215 22:47:20.638"/>
+<status status="PASS" starttime="20230217 17:06:49.181" endtime="20230217 17:06:51.462"/>
 </kw>
-<doc>This is how to switch from a window to other window</doc>
-<status status="PASS" starttime="20230215 22:47:04.745" endtime="20230215 22:47:20.639"/>
+<status status="PASS" starttime="20230217 17:06:10.851" endtime="20230217 17:06:51.462"/>
 </test>
-<status status="PASS" starttime="20230215 22:47:04.458" endtime="20230215 22:47:20.640"/>
+<status status="PASS" starttime="20230217 17:06:10.572" endtime="20230217 17:06:51.462"/>
 </suite>
 <statistics>
 <total>
@@ -153,7 +252,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="DemoQA">DemoQA</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="DemoQA Form">DemoQA Form</stat>
 </suite>
 </statistics>
 <errors>
