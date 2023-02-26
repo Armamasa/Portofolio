@@ -2,7 +2,10 @@
 Library     SeleniumLibrary
 
 *** Variables ***
-${url_demoQA}     https://demoqa.com/
+${demoQA}     https://demoqa.com/
+${NAME}         vabian
+${EMAIL}        vabian123@gmail.com
+${PASSWORD}     vabiantut
 
 *** Keywords ***
 Open Homepage
